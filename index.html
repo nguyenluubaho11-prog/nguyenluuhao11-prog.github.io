@@ -7,12 +7,27 @@
 <style>
 body {
     font-family: Arial;
+    margin: 0;
     background: #f5f5f5;
-    text-align: center;
 }
 
-h1 {
+header {
+    background: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.search {
+    text-align: center;
     margin: 20px;
+}
+
+input {
+    padding: 10px;
+    width: 60%;
+    max-width: 400px;
 }
 
 .container {
@@ -28,14 +43,19 @@ h1 {
     width: 220px;
     border-radius: 10px;
     box-shadow: 0 0 10px #ccc;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .card img {
     width: 100%;
-    border-radius: 10px;
 }
 
 button {
+    margin-top: 10px;
     padding: 10px;
     background: black;
     color: white;
@@ -47,7 +67,13 @@ button {
 
 <body>
 
-<h1>🔥 Best Budget Finds</h1>
+<header>🔥 Best Budget Finds</header>
+
+<div class="search">
+<input type="text" placeholder="Search products...">
+</div>
+
+<h2 style="text-align:center;">✨ Trending Products</h2>
 
 <div class="container">
 
@@ -55,21 +81,21 @@ button {
 <img src="https://via.placeholder.com/200">
 <h3>LED Light Strip</h3>
 <p>$10</p>
-<button onclick="window.location.href='https://vi.aliexpress.com/item/1005007340042318.html?spm=a2g0o.productlist.main.28.9ee331ddtCz6J9&aem_p4p_detail=202605012059575937911184610060003385439&algo_pvid=7175d622-66b7-4bcb-afca-dc589afa831d&algo_exp_id=7175d622-66b7-4bcb-afca-dc589afa831d-27&pdp_ext_f=%7B%22order%22%3A%2227%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21VND%21730050%21204982%21%21%2125.18%217.07%21%402102f22c17776943973843327e544e%2112000040332102621%21sea%21VN%216567611945%21ABX%211%210%21n_tag%3A-29910%3Bd%3Aa4899bdc%3Bm03_new_user%3A-29895%3BpisId%3A5000000204863185&curPageLogUid=DvCLg9N4rPu9&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005007340042318%7C_p_origin_prod%3A&search_p4p_id=202605012059575937911184610060003385439_7'">Buy Now</button>
+<button onclick="window.location.href='LINK_1'">Buy Now</button>
 </div>
 
 <div class="card">
 <img src="https://via.placeholder.com/200">
-<h3>Minimal Desk Lamp</h3>
+<h3>Desk Lamp</h3>
 <p>$20</p>
-<button onclick="window.location.href='https://example.com'">Buy Now</button>
+<button onclick="window.location.href='LINK_2'">Buy Now</button>
 </div>
 
 <div class="card">
 <img src="https://via.placeholder.com/200">
 <h3>Bluetooth Speaker</h3>
 <p>$15</p>
-<button onclick="window.location.href='https://example.com'">Buy Now</button>
+<button onclick="window.location.href='LINK_3'">Buy Now</button>
 </div>
 
 </div>
